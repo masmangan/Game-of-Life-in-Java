@@ -11,7 +11,7 @@ package org.bitstorm.gameoflife;
  *
  */
 public class Cell {
-	public final short col;
+	public final short col; //TESTE
 	public final short row;
 	/**
 	 * Number of neighbours of this cell.
