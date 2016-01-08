@@ -52,7 +52,7 @@ public interface CellGrid {
 	 * @return Enumerator over Cell.
 	 * @see Cell
 	 */
-	public Enumeration getEnum();
+	public Enumeration<?> getEnum();
 
 	/**
 	 * Clears grid.

@@ -63,7 +63,7 @@ public class GameOfLifeGrid implements CellGrid {
 	public synchronized void next() {
 		Cell cell;
 		int col, row;
-		int neighbours;
+//		int neighbours;
 		Enumeration enums;
 
 		generations++;

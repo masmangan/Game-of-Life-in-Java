@@ -11,7 +11,7 @@ package org.bitstorm.gameoflife;
  *
  */
 public class Cell {
-	public final short col; //TESTE
+	public final short col; 
 	public final short row;
 	/**
 	 * Number of neighbours of this cell.
@@ -41,6 +41,7 @@ public class Cell {
 	 * Compare cell-objects for use in hashtables
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
+	@Override
 	public boolean equals(Object o) {
 		if (!(o instanceof Cell) )
 			return false;
@@ -52,6 +53,7 @@ public class Cell {
 	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
+	@Override
 	public int hashCode() {
 		return HASHFACTOR*row+col;
 	}
@@ -59,8 +61,19 @@ public class Cell {
 	/**
 	 * @see java.lang.Object#toString()
 	 */
+	@Override
 	public String toString() {
 		return "Cell at ("+col+", "+row+") with "+neighbour+" neighbour"+(neighbour==1?"":"s");
 	}
 }
+
+
+
+
+
+
+
+
+
+
 
